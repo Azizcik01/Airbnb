@@ -54,6 +54,11 @@ class Product_Images(models.Model):
 
     def __str__(self) -> str:
         return self.product.title
-
-
+    
+    def format(self):
+        return {
+            "id": self.id,
+            "image": self.image,
+            'product_id':self.product.id,
+        }
 

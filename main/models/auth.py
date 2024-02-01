@@ -39,7 +39,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = U_Manager()
 
-    USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['email']
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
     
-

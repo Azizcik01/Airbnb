@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'main',
     'rest_framework',
     'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -109,11 +110,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -125,6 +126,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
 AUTH_USER_MODEL = 'main.User'
